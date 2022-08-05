@@ -4,12 +4,18 @@ import { NavLink } from "react-router-dom";
 export const NavBar = () => {
   return (
     <nav>
-      <NavLink className="index-link" to="/" exact="true">
-        Main
-      </NavLink>
-      <NavLink className="home-link" to="/home">
-        Home
-      </NavLink>
+      <ul>
+        <li>
+          <NavLink className="index-link" to="/" exact="true">
+            Main
+          </NavLink>
+        </li>
+        <li>
+          <NavLink className="home-link" to="/home">
+            Home
+          </NavLink>
+        </li>
+      </ul>
     </nav>
   );
 };
